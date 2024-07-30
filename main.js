@@ -60,19 +60,19 @@ console.log(`\n#### Randomized Transformational Coaching for ${dateString} ####\
 
 const quote = selectRandomArrayElement(quotes);
 narrowPrint('Today\'s inspirational/insightful quote to reflect on: "' + quote.quote + '" --- ' + quote.source, width);
-console.log('\n');
+console.log('');
 
 const principle = selectRandomArrayElement(principles).toLowerCase();
 narrowPrint('Additionally, I invite you to reflect on the principle of ' + principle + '. How have you interacted with the principle of ' + principle + ' recently? How are you inspired to relate with it today?', width);
-console.log('\n');
+console.log('');
 
 const practice = selectRandomArrayElement(practices);
 narrowPrint('Finally, here is a practice which you might consider implementing in your day today. See if it resonates with you, and if it does then try it out as a source of nourishment and recalibration:', width);
+console.log('');
 
 const leftFrame = '  ||  ';
 const narrowWidth = 60; // Width for "practice placard."
-console.log('\n');
-console.log('  //' + '*'.repeat(narrowWidth + leftFrame.length + 2) + '\\\\\n  ||'); // Some ASCII styling.
+console.log('  //' + '*'.repeat(narrowWidth + leftFrame.length + 8) + '\\\\\n  ||'); // Some ASCII styling.
 narrowPrint(practice.name, narrowWidth, leftFrame);
 console.log(leftFrame);
 narrowPrint('The purpose of this practice is to ' + practice.purpose.toLowerCase(), narrowWidth, leftFrame);
