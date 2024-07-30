@@ -33,3 +33,12 @@ const practices = [
 
 // Program Output //
 console.log(`\n#### Randomized Transformational Coaching for ${dateString} ####\n`);
+
+let quote = selectRandomArrayElement(quotes);
+console.log('Today\'s inspirational/insightful quote to reflect on: "' + quote.quote + '" --- ' + quote.source + '\n');
+
+let principle = selectRandomArrayElement(principles).toLowerCase();
+console.log('Additionally, I invite you to reflect on the principle of ' + principle + '. How have you interacted with the principle of ' + principle + ' recently? How are you inspired to relate with it today?\n');
+
+let practice = selectRandomArrayElement(practices);
+console.log('Finally, here is a practice which you might consider implementing in your day today. See if it resonates with you, and if it does then try it out as a source of nourishment and recalibration:')
