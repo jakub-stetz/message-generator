@@ -3,6 +3,7 @@
 const selectRandomArrayElement = array => array[Math.floor(Math.random()*array.length)]; // Select random element out of an array.
 
 const narrowPrint = (string, width, leftFrame = '') => {
+  if (!width) throw new Error('Make sure to input a width value for narrowPrint() function!');
   let length = string.length+1; // +1 for extra space that will be at the end of the final string.
   let stringWords = string.split(' ');
   let singleLine = '';
@@ -28,7 +29,6 @@ const day = date.getDate();
 const month = date.toLocaleString('en', {month: 'long'});
 const year = date.getFullYear();
 const dateString = `${weekday}, ${day} ${month} ${year}`;
-
 
 // Store Quotes to Select From
 const quotes = [{
