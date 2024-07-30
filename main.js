@@ -70,7 +70,7 @@ const practice = selectRandomArrayElement(practices);
 narrowPrint('Finally, here is a practice which you might consider implementing in your day today. See if it resonates with you, and if it does then try it out as a source of nourishment and recalibration:', width);
 console.log('');
 
-const leftFrame = '  ||  ';
+const leftFrame = '  ||  '; // Input to narrowPrint() function for "practice placard" for some ASCII styling.
 const narrowWidth = 60; // Width for "practice placard."
 console.log('  //' + '*'.repeat(narrowWidth + leftFrame.length + 8) + '\\\\\n  ||'); // Some ASCII styling.
 narrowPrint(practice.name, narrowWidth, leftFrame);
