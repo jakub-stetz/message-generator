@@ -1,6 +1,6 @@
 // Functions //
 
-const selectRandomArrayElement = array => array[Math.floor(Math.random()*array.length)];
+const selectRandomArrayElement = array => array[Math.floor(Math.random()*array.length)]; // Select random element out of an array.
 
 const narrowPrint = (string, width, leftFrame = '') => {
   let length = string.length+1; // +1 for extra space that will be at the end of the final string.
@@ -21,7 +21,7 @@ const narrowPrint = (string, width, leftFrame = '') => {
   };
 };
 
-// Identifying Current Date and Making a Nice String Out of It //
+// Identify Current Date and Making a Nice String Out of It //
 const date = new Date();
 const weekday = date.toLocaleString('en', {weekday: 'long'});
 const day = date.getDate();
@@ -29,6 +29,8 @@ const month = date.toLocaleString('en', {month: 'long'});
 const year = date.getFullYear();
 const dateString = `${weekday}, ${day} ${month} ${year}`;
 
+
+// Store Quotes to Select From
 const quotes = [{
   quote: 'True change doesn’t emerge just from action; it emerges from genuine understanding. Action that stems from shallow understanding turns out to be shallow action. Action that flows from deeply felt consciousness is action that can change the world.', source: 'Marianne Williamson'},
   {quote: 'Insight that is genuinely, profoundly realized and experienced, naturally inspires potent and purposeful action.', source: 'David Wolf'},
@@ -40,8 +42,10 @@ const quotes = [{
   {quote: 'I have so much to do that I shall spend the first three hours in prayer.', source: 'Martin Luther'}
 ];
 
+// Store Principles to Select From
 const principles = ['Empathy', 'Gratitude', 'Intuition', 'Self-care', 'Vision'];
 
+// Store Practices to Select From
 const practices = [
   {name: 'The "I Am Experiencing" Process', purpose: 'Support you to penetrate past the logical or analytical mind and simply give full space for whatever physical or emotional sensations you are experiencing.', prescription: 'When your mind feels very loud, dense, or heavy, or you are otherwise feeling disconnected from your body or heart.', description: 'Close your eyes and simply repeat the statement "I am experiencing...", completing the statement with whatever comes up. Don\'t try to filter or make sense of what comes to mind; just say whatever comes up regardless of if it makes sense or not or if it feels aligned or not. Continue this process until you feel complete, which is often symptomized by transitioning from negative or heavy emotions to positive emotions.'},
   {name: 'The Five Questions Process', purpose: 'Support you to give full space for physical sensations in your body, and to release negative sensations by fully experiencing them.', prescription: 'When you are feeling some persistent (especially negative) physical sensation.', description: 'Answer the five questions in order repeatedly until you feel clear of any negative sensations. The five questions are:     1. "Where are you experiencing the sensation? Be specific."     2. "What does the sensation feel like?"     3. "If it had a color, what color would it have?"     4. "If it had a shape, what shape would it have?"     5. "If it could hold water, how much water would it hold?"'},
@@ -51,24 +55,30 @@ const practices = [
 ];
 
 // Program Output //
+const width = 85; // Desired width of output.
 console.log(`\n#### Randomized Transformational Coaching for ${dateString} ####\n`);
 
 const quote = selectRandomArrayElement(quotes);
-console.log('Today\'s inspirational/insightful quote to reflect on: "' + quote.quote + '" --- ' + quote.source + '\n');
+narrowPrint('Today\'s inspirational/insightful quote to reflect on: "' + quote.quote + '" --- ' + quote.source, width);
+console.log('\n');
 
 const principle = selectRandomArrayElement(principles).toLowerCase();
-console.log('Additionally, I invite you to reflect on the principle of ' + principle + '. How have you interacted with the principle of ' + principle + ' recently? How are you inspired to relate with it today?\n');
+narrowPrint('Additionally, I invite you to reflect on the principle of ' + principle + '. How have you interacted with the principle of ' + principle + ' recently? How are you inspired to relate with it today?', width);
+console.log('\n');
 
 const practice = selectRandomArrayElement(practices);
-const leftFrame = '  ||  '
-const narrowWidth = 64;
-console.log('Finally, here is a practice which you might consider implementing in your day today. See if it resonates with you, and if it does then try it out as a source of nourishment and recalibration:\n')
-console.log('  //' + '*'.repeat(width + leftFrame.length + 2) + '\\\\\n  ||'); // Some ASCII styling.
-narrowPrint(practice.name, width, leftFrame);
+narrowPrint('Finally, here is a practice which you might consider implementing in your day today. See if it resonates with you, and if it does then try it out as a source of nourishment and recalibration:', width);
+
+const leftFrame = '  ||  ';
+const narrowWidth = 60; // Width for "practice placard."
+console.log('\n');
+console.log('  //' + '*'.repeat(narrowWidth + leftFrame.length + 2) + '\\\\\n  ||'); // Some ASCII styling.
+narrowPrint(practice.name, narrowWidth, leftFrame);
 console.log(leftFrame);
-narrowPrint('The purpose of this practice is to ' + practice.purpose.toLowerCase(), width, leftFrame);
+narrowPrint('The purpose of this practice is to ' + practice.purpose.toLowerCase(), narrowWidth, leftFrame);
 console.log(leftFrame);
-narrowPrint('This practice is recommended ' + practice.prescription.toLowerCase(), width, leftFrame);
+narrowPrint('This practice is recommended ' + practice.prescription.toLowerCase(), narrowWidth, leftFrame);
 console.log(leftFrame + '\n' + leftFrame + 'The practice is performed as follows:\n' + leftFrame);
-narrowPrint(practice.description, width, leftFrame);
-console.log('  ||\n  \\\\' + '*'.repeat(width + leftFrame.length + 2) + '//'); // Some ASCII styling.
+narrowPrint(practice.description, narrowWidth, leftFrame);
+console.log('  ||\n  \\\\' + '*'.repeat(narrowWidth + leftFrame.length + 2) + '//'); // Some ASCII styling.
+console.log('\n');
