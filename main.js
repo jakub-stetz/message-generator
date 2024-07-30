@@ -1,3 +1,7 @@
+// Functions //
+
+const selectRandomArrayElement = array => array[Math.floor(Math.random()*array.length)];
+
 // Identifying Current Date and Making a Nice String Out of It //
 const date = new Date();
 const weekday = date.toLocaleString('en', {weekday: 'long'});
