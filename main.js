@@ -2,6 +2,25 @@
 
 const selectRandomArrayElement = array => array[Math.floor(Math.random()*array.length)];
 
+const narrowPrint = (string, width, leftFrame = '') => {
+  let length = string.length+1; // +1 for extra space that will be at the end of the final string.
+  let stringWords = string.split(' ');
+  let singleLine = '';
+  let singleLineLength = 0;
+  let wordAndSpaceLength = 0;
+  while (length > 0) {
+    while (singleLineLength + wordAndSpaceLength < width && stringWords.length > 0) { // Check resulting length after next addition against width input, and check to ensure that the array of words from our string isn't empty.
+      wordAndSpaceLength = stringWords[0].length+1; // Save length of next word, +1 for extra space.
+      singleLineLength += wordAndSpaceLength; // Add next word length to overall length of current line.
+      singleLine += stringWords.shift() + ' '; // Add next word to line output, along with extra space.
+    }
+    length -= singleLineLength; // Subtract word added to line from overall input string length.
+    console.log(leftFrame + singleLine); // Print single line.
+    wordAndSpaceLength = singleLineLength = 0; // Reset values for next line.
+    singleLine = '';
+  };
+};
+
 // Identifying Current Date and Making a Nice String Out of It //
 const date = new Date();
 const weekday = date.toLocaleString('en', {weekday: 'long'});
