@@ -21,6 +21,8 @@ const quotes = [{
   {quote: 'I have so much to do that I shall spend the first three hours in prayer.', source: 'Martin Luther'}
 ];
 
+const principles = ['Empathy', 'Gratitude', 'Intuition', 'Self-care', 'Vision'];
+
 const practices = [
   {name: 'The "I Am Experiencing" Process', purpose: 'Support you to penetrate past the logical or analytical mind and simply give full space for whatever physical or emotional sensations you are experiencing.', prescription: 'When your mind feels very loud, dense, or heavy, or you are otherwise feeling disconnected from your body or heart.', description: 'Close your eyes and simply repeat the statement "I am experiencing...", completing the statement with whatever comes up. Don\'t try to filter or make sense of what comes to mind; just say whatever comes up regardless of if it makes sense or not or if it feels aligned or not. Continue this process until you feel complete, which is often symptomized by transitioning from negative or heavy emotions to positive emotions.'},
   {name: 'The Five Questions Process', purpose: 'Support you to give full space for physical sensations in your body, and to release negative sensations by fully experiencing them.', prescription: 'When you are feeling some persistent (especially negative) physical sensation.', description: 'Answer the five questions in order repeatedly until you feel clear of any negative sensations. The five questions are:\n   1. "Where are you experiencing the sensation? Be specific."\n   2. "What does the sensation feel like?"\n   3. "If it had a color, what color would it have?"\n   4. "If it had a shape, what shape would it have?"\n   5. "If it could hold water, how much water would it hold?"'},
