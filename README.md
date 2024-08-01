@@ -1,35 +1,52 @@
-# Message Generator
+# Mixed Messages
 
 ## Description
 
-This is an extremely important component of the README. You should describe the main purpose of your project. Answer questions like “why did you build this project?” and “what problem(s) does it solve?”. It also helps to include your motivations for the project and what you learned from it.
+This project was completed as part of the Codecademy Full-Stack Engineer skill path; it constitutes the first portfolio project on the skill path.
 
-## Features
+Each time main.js is run, it provides the user with some randomized insights and guidance drawn from my personal education in transformative coaching. Specifically, it provides the user with three pieces of "coaching:"
+1. A quote.
+2. A principle or concept to reflect on.
+3. A suggested practice for the day.
+The program has been set up such that the output is of a certain width, and some basic ASCII styling has been contributed to the suggested practice of the day.
 
-If your project has multiple features, list them here. Don’t be afraid to brag if your project has unique features that make it stand out. You can even add screenshots and gifs to show off the features.
+The purpose of this project is to demonstrate understanding of fundamental JavaScript programming. In completing this project, I got to practice the following skills:
+- Working with basic, foundational aspects of JavaScript like variables, functions, and console output.
+- Array and string manipulation in JavaScript.
+- Developing and running JavaScript code locally.
+- Git version control (this was a key focus of this project).
+- Working with the `date` JavaScript object (for the first time!).
+The specific inspiration of making the theme of this project transformational coaching came from my own recent significant experiences with transformational coaching.
+
+## Original Codecademy Prompt
+
+"For this project, you will build a message generator program. Every time a user runs a program, they should get a new, randomized output. You’re welcome to take the project in a couple of different forms, like an astrology generator, inspirational message, or nonsensical jokes. To make your program truly random, the message that it outputs should be made up of at least three different pieces of data. Take what you know of JavaScript syntax so far to build the program and customize it to your liking."
+
+### Project Objectives
+
+- Build a message generator program using JavaScript
+- Use Git version control
+- Use command line
+- Develop locally on your computer
+
+### Project Prerequisites
+
+- JavaScript
+- Git and GitHub
+- Command line
 
 ## How to Use
 
-Here, you should write step-by-step instructions on how to install and use your project. Any software or package requirements should also be listed here.
-
-## Technologies
-
-List all the technologies and/or frameworks you used and what purpose they serve in your project.
-
-## Collaborators
-
-If others have contributed to your project in any way, it is important to give them credit for their work. Write your team members’ or collaborators’ names here along with a link to their GitHub profile.
+To run this program one simply needs to run the main.js file.
 
 ## License
 
-It’s also important to list a license on your README so other developers can understand what they can and cannot do with your project. You can use this guide to help you choose a license.
+MIT License
 
-## Additional General Remarks from Codecademy
+Copyright (c) [2024] [Hugo Stetz]
 
-Your README file should be as good as your project itself.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Keep READMEs brief but detailed. README should always be up-to-date and self-explanatory. If you have spent a lot of time on your project, you should also spend a good chunk of time on the README. It can help your future self as well when you step away for a while and need to get reacquainted with your project. Not to mention it’ll leave a positive impression on future interviewers who look at your GitHub profile.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Documentation doesn’t have to be boring. Go for images or videos to make a project more understandable and appealing! We can add the project’s logo, diagrams, screenshots, or even GIFs! For Markdown files living in a repository, the path to the image can either be to an URL or to an image file in the repository. For example, if we had an image named `diagram.png` inside the `images` folder of the repository, we could reference it like so `![Use Case Diagram](./images/diagram.png)` in the README.md.
-
-The above is taken from https://www.codecademy.com/journeys/full-stack-engineer/paths/fscj-22-building-interactive-websites/tracks/fscj-22-git-and-github-part-i/modules/wdcp-22-github-and-markdown-cf16f758-7263-4e45-a6a8-64175c984c45/articles/how-to-write-a-good-readme-for-your-project.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
