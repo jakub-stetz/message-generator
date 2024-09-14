@@ -10,6 +10,10 @@ Each time main.js is run, it provides the user with some randomized insights and
 3. A suggested practice for the day.
 The program has been set up such that the output is of a certain width, and some basic ASCII styling has been contributed to the suggested practice of the day.
 
+The purpose of this project was to practice working with Git version control, JavaScript array and string manipulation, and general JavaScript syntax.
+
+The specific inspiration of making the theme of this project transformational coaching came from my own recent significant experiences with transformational coaching.
+
 ## Skills Practiced & Lessons Learned
 
 - Working with basic, foundational aspects of JavaScript like variables, functions, and console output.
@@ -17,7 +21,6 @@ The program has been set up such that the output is of a certain width, and some
 - Developing and running JavaScript code locally.
 - Git version control (this was a key focus of this project).
 - Working with the `date` JavaScript object (for the first time!).
-The specific inspiration of making the theme of this project transformational coaching came from my own recent significant experiences with transformational coaching.
 
 ## Original Codecademy Prompt
 
