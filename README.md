@@ -10,7 +10,8 @@ Each time main.js is run, it provides the user with some randomized insights and
 3. A suggested practice for the day.
 The program has been set up such that the output is of a certain width, and some basic ASCII styling has been contributed to the suggested practice of the day.
 
-The purpose of this project is to demonstrate understanding of fundamental JavaScript programming. In completing this project, I got to practice the following skills:
+## Skills Practiced & Lessons Learned
+
 - Working with basic, foundational aspects of JavaScript like variables, functions, and console output.
 - Array and string manipulation in JavaScript.
 - Developing and running JavaScript code locally.
@@ -37,7 +38,7 @@ The specific inspiration of making the theme of this project transformational co
 
 ## How to Use
 
-To run this program one simply needs to run the main.js file.
+To run this program one simply needs to run the main.js file with Node.js or some other runtime environment.
 
 ## License
 
